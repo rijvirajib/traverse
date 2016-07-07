@@ -41,6 +41,12 @@ const traverse = (river, velocity) => {
 
 
 module.exports = function (river) {
+  // Ensure that only ~ and * are in the string
+  var allowed = new RegExp("^[~|*]+$");
+  if(!river.match(allowed)) {
+    return false;
+  }
+
   // If river starts with a river, we need to fail
   if (river.substr(0, 1) === '~') {
     return false;

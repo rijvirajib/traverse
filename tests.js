@@ -21,6 +21,8 @@ const shouldPass = [
 ];
 
 const shouldFail = [
+  '*****a',
+  '*~$',
   '~',
   '~*',
   '~~',
