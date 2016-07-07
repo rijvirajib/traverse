@@ -1,0 +1,12 @@
+{
+  "name": "riverjump",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "mocha tests.js"
+  },
+  "author": "Rijvi Rajib",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
+}
